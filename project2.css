@@ -1,0 +1,651 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+nav 
+{
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+}
+
+.container 
+{
+  width: 100%;
+  max-width: 1200px;
+  /*padding: 10px;*/
+  /*background: red;*/
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+
+.containerpart 
+{
+  width: calc(50% - 10px);
+  /*padding: 10px;*/
+  /*background: gold;*/
+}
+.logo h1 
+{
+  color: black;
+  font-size: 36px;
+  
+}
+
+.ag 
+{
+  margin-left: 5px;
+  color: black;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.containerpart .ulist 
+{
+  
+  list-style: none;
+  display:flex;
+  justify-content: flex-end;
+
+}
+
+.ulist li 
+{
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: 0.6s;
+  position: relative;
+}
+
+.ulist li a 
+{
+  color: black;
+}
+
+.ulist li:hover 
+{
+  background: gray;
+  border-radius: 5px;
+
+}
+.ulist li:hover a 
+{
+  color: white;
+}
+.border 
+{
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.ulist li:hover.border 
+{
+  background: gray;
+  border-radius: 15px;
+}
+
+/*---------------------------*/
+.inner {display: none; position: absolute; top: 100%; left: 0; width: 150px; background: black;}
+.inner li{display: block; width: 100%; text-align: center;}
+.ulist li:hover .inner{ display: block; }
+
+
+/*------------------------------------------------*/
+
+#home 
+{
+  width: 100%;
+  height: 100vh;
+  background-image: url(build.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 170px;
+}
+
+.home1part 
+{
+  /*width: 100%;*/
+  max-width: 1200px;
+  /*background: coral;*/
+  /*padding: 10px;*/
+  margin: auto;
+}
+
+.homehed 
+{
+  /*padding: 10px;*/
+  /*background: gray;*/
+  text-align: center;
+}
+.hoh 
+{
+  color: black;
+  text-transform: capitalize;
+  font-size: 3vw;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.pra 
+{
+  margin-top: 10px;
+  color: white;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: gray;
+}
+
+.btn 
+{
+  border: none;
+  outline: none;
+  margin-top: 50px;
+  width: 150px;
+  height: 45px;
+  border-radius: 18px;
+  background-image: linear-gradient( 90deg,black,purple,hotpink);
+  transition: 1s;
+
+
+}
+.btn a 
+{
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+
+.btn:hover 
+{
+  background-image: linear-gradient(90deg,maroon,orange,red,maroon);
+}
+.btn:hover a 
+{
+  color: black;
+}
+
+/*-------------------------------------------------*/
+#offer 
+{
+  width: 100%;
+  height: 80vh;
+  /*background: gold;*/
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+
+.offerpart 
+{
+  width:50%;
+  height: 100%;
+  background-image: url(code4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.offercover 
+{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*flex-wrap: wrap;*/
+}
+
+.offermain 
+{
+  width: 600px;
+  padding: 10px;
+  /*background: red;*/
+  padding-left: 80px;
+  
+}
+
+.op 
+{
+
+  color: white;
+  font-size: 33px;
+
+}
+
+.od 
+{
+  margin-left: 5px;
+  font-size: 36px;
+  font-weight: 600;
+
+}
+.ofp 
+{
+  color: lightgray;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 17px;
+  word-spacing: 2px;
+  margin-top: 10px;
+}
+
+
+
+.offerpart1
+{
+  width: 50%;
+  height: 100%;
+  background-image: url(code5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  
+}
+
+.offercover1 
+{
+  width: 100%;
+  height: 100%;
+  /*background: rgba(0, 0, 0, );*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-----------------------------------------*/
+#portfolio 
+{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  padding-top: 50px;
+}
+
+.porthed 
+{
+  max-width: 1200px;
+  padding: 10px;
+  /*background-color: gray;*/
+  margin: auto;
+}
+.ph 
+{
+  text-align: center;
+  font-size: 32px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.portmain 
+{
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px;
+  /*background-color: coral;*/
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portpart 
+{
+  width: calc(50% - 10px);
+  padding: 10px;
+  /*background-color: gold;*/
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  
+
+}
+.pminpart 
+{
+  width: calc(25% - 10px);
+  padding: 10px;
+  /*background-color: green;*/
+  text-align: center;
+
+
+
+}
+
+.pminpart i 
+{
+  color: gray;
+  font-size: 70px;
+}
+.pminpart1 
+{
+  width: calc(75% - 10px);
+  padding: 10px;
+  /*background-color: green;*/
+  
+
+
+}
+.pminpart1 h1 
+{
+  text-transform: lowercase;
+  font-size: 33px;
+}
+
+.pp 
+{
+  color: gray;
+  margin-top: 20px;
+  /*word-spacing: 2px;*/
+  letter-spacing: 2px;
+  text-align: justify;
+}
+.bt
+{
+  margin: auto;
+  margin-top: 10px;
+}
+
+
+
+/*------------------------------------*/
+
+#templet 
+{
+  width: 100%;
+  height: 80vh;
+  background-image: url(tp2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.tcover 
+{
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.thed 
+{
+  
+  width: 500px;
+  padding: 10px;
+  /*background-color: coral;*/
+
+}
+.thed h1 
+{
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.thed p 
+{
+  color: lightgray;
+  line-height: 1.5;
+  word-spacing: 1px;
+  text-align: center;
+
+}
+
+.tb,.btn a
+{
+ text-align: center;
+  
+}
+
+
+/*--------------------------------------*/
+#about 
+{
+  width: 100%;
+  height: 100vh;
+  background-image: url(of3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+.abcover 
+{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+   padding-top: 20px;
+}
+.abhed 
+{
+  width: 100%;
+  max-width: 1200px;
+  /*background-color: red;*/
+  padding: 10px;
+  margin: auto;
+}
+
+.abhed h1 
+{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+.abhed p 
+{
+  text-align: center;
+  line-height: 1.5;
+  color: lightgray;
+}
+
+.aboutmain 
+{
+  width: 100%;
+  max-width: 1200px;
+  /*background-color: green;*/
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.aboutpart 
+{
+  width: calc(25% - 10px);
+  /*background-color: gold;*/
+  padding: 10px;
+
+}
+
+.abmin 
+{
+  width: 150px;
+  height: 150px;
+  /*background-color: firebrick;*/
+  margin: auto;
+  border-radius: 50%;
+
+}
+
+.abmin img 
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.hp 
+{
+  text-align: center;
+  padding: 10px;
+
+}
+.ah 
+{
+  font-size: 21px;
+  word-spacing: 2px;
+  color: white;
+}
+.ap 
+{
+  color: lightgray;
+  margin-top: 10px;
+  
+  word-spacing: 2px;
+}
+
+/*--------------------------------*/
+#last 
+{
+  width: 100%;
+  height: 70vh;
+  background-image: url(loc2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.icon   
+{
+  font-size: 4em;
+  background: red;
+  background: linear-gradient(90deg,black,purple,hotpink);
+  /*background-size: 80%;*/
+  /*animation: mov 3s linear infinite;*/
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/*----------------------------------------*/
+@media(max-width: 980px)
+{
+  .containerpart 
+  {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 15px;
+    
+  }
+  .logo 
+  {
+    text-align: center;
+  }
+
+  .containerpart .ulist 
+  {
+     justify-content: center;
+  }
+
+  .aboutpart 
+  {
+    width: calc(50% - 10px);
+    margin-top: 10px;
+  }
+  
+
+/*------------------------------*/
+#offer 
+{
+  height: auto;
+}
+.offerpart 
+{
+  width: 100%;
+  text-align: center;
+}
+
+.offerpart1
+{
+  width: 100%;
+  text-align: center;
+}
+
+.offermain 
+{
+  padding: 20px;
+}
+}
+
+@media(max-width: 600px)
+{
+
+.portpart 
+{
+  width: 100%;
+  margin: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+#portfolio
+{
+  padding-top: 0;
+  height: auto;
+}
+
+.pminpart1 h1 
+{
+  font-size: 25px;
+}
+#templet
+{
+  height: auto;
+}
+
+#about 
+{
+  height: auto;
+}
+.abcover 
+{
+  height: auto;
+}
+.aboutpart 
+  {
+    width:100%;
+    margin-top: 10px;
+  }
+
+}
+
+
+
+
+
+
